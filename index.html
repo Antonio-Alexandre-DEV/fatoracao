@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatoração</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Vamos limitar os números entre 1 e 21, pois não existe fatorial de número negativo (0! = 1) e o fatorial de 22 já é um número muito grande para ser representado de forma simples na tela -->
+    
+    <h1>Fatore um numero</h1>
+    <p>Vamos achar o fatorial entre os numeros 1 a 21</p>
+
+    <canvas id="tela" width="1500px" height="200px"></canvas>
+
+    <section id="entrada">
+        <form action="#" method="get">
+            <p>
+                <label for="fnum">Numero:</label>
+                <input type="number" name="num" id="fnum" max="21" mim="1" placeholder="Numero:">
+                <input type="submit" value="fatorar" formaction="javascript:fatorar()">
+
+            </p>
+        </form>
+    </section>
+
+    <section id="saida">
+
+        <p>Escolha um numero e aperte no botão fatorar</p>
+        
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
